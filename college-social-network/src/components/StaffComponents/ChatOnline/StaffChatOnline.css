@@ -1,0 +1,53 @@
+.onlineFriends {
+  background-color: #ffffff;
+  width: 18vw;
+  height: 40vh;
+
+  position: absolute;
+  top: 100px;
+  right: 13px;
+  border-radius: 20px;
+
+  position: fixed;
+  z-index: 1;
+
+  overflow-y: hidden;
+}
+
+.onlineFriends .onlineFriendsHeader {
+  padding: 0px 20px;
+  margin-top: 13px;
+}
+
+.Friends {
+  padding: 0px 15px;
+  height: 40vh;
+  overflow-y: auto;
+}
+
+.onlineStaffs {
+  background-color: #ffffff;
+  width: 18vw;
+  height: 40vh;
+
+  position: absolute;
+  top: 410px;
+  right: 13px;
+  border-radius: 20px;
+
+  position: fixed;
+  z-index: 1;
+
+  overflow-y: hidden;
+}
+
+.onlineStaffs .onlineStaffHeader {
+  padding: 0px 20px;
+  margin-top: 13px;
+}
+
+.Staffs {
+  padding: 0px 15px;
+  height: 40vh;
+  overflow-y: auto;
+}

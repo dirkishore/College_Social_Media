@@ -1,0 +1,27 @@
+.AddAdmin {
+  display: flex;
+  position: relative;
+  top: 100px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.AddAdminInner {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 50px 20px;
+  width: 25%;
+  border-radius: 20px;
+}
+
+.AddAdmin input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #811eff;
+  background: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+}

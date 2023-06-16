@@ -1,0 +1,14 @@
+.feeds {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  top: 80px;
+}
+
+.feedsWrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}

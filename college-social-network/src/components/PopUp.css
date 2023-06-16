@@ -1,0 +1,170 @@
+.popUp {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.popUpDescription {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.upload-photo-popup {
+  position: relative;
+
+  width: 30vw;
+  height: 45vh;
+
+  display: flex;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px 1000px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.photo-popup-Description {
+  position: relative;
+
+  width: 35vw;
+  height: 45vh;
+
+  display: flex;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px 1000px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.upload-photo-popup .popup-inner {
+  position: relative;
+  width: 100%;
+}
+
+.photo-popup-Description .popup-inner {
+  position: relative;
+  width: 100%;
+}
+
+.photo-popup-Description .popup-inner .preview-description {
+  display: flex;
+  flex-direction: row;
+}
+
+.photo-popup-Description .popup-inner .writeCaption {
+  position: relative;
+  left: 25px;
+  top: 20px;
+  /* display: grid;
+  gap: 20px;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 50px 20px;
+  width: 30%;
+  border-radius: 20px; */
+}
+
+.photo-popup-Description .writeCaption span {
+  position: absolute;
+  pointer-events: none;
+  font-size: 1em;
+  color: #000000;
+  width: 100%;
+  left: 0;
+  /* text-transform: capitalize; */
+  transition: 0.5s;
+  margin-bottom: 0px;
+  /* z-index: -1; */
+}
+
+.photo-popup-Description .writeCaption .caption-input {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+.writeCaption .caption-input:valid ~ span,
+.writeCaption .caption-input:focus ~ span {
+  color: #000000;
+  transform: translateX(-10px) translateY(-15px);
+  font-size: 0.9em;
+  padding: 0 10px;
+  border-radius: 2px;
+  letter-spacing: 0.05em;
+}
+
+.photo-popup-Description .popup-inner .postUpload-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-popup-Description .popup-inner .postUpload-btn .upload-btn {
+  position: absolute;
+  bottom: 0px;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #8f3dfa;
+  font-size: 18px;
+  color: white;
+  border: none;
+}
+
+.upload-photo-popup .popup-inner .close-popup {
+  position: absolute;
+  right: 0;
+  padding: 3px;
+  border-radius: 8px;
+  background-color: #8f3dfa;
+  font-size: 18px;
+  color: white;
+}
+
+.photo-popup-Description .popup-inner .close-popup {
+  position: absolute;
+  right: 0;
+  padding: 3px;
+  border-radius: 8px;
+  background-color: #8f3dfa;
+  font-size: 18px;
+  color: white;
+}
+
+.upload-photo-popup .popup-inner .next-btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+.upload-photo-popup .popup-inner .upload-next-btn {
+  position: absolute;
+  /* bottom: 20px; */
+  padding: 2px 9px;
+  border-radius: 8px;
+  background-color: #8f3dfa;
+  font-size: 20px;
+  color: white;
+  border: none;
+}
+
+.post-preview {
+  width: 15vw;
+  overflow: 20vh;
+}
+
+.popUpDescription .popup-inner img {
+  flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  max-width: 100%;
+  max-height: 100%;
+}

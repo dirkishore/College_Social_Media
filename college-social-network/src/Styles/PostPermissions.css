@@ -1,0 +1,128 @@
+.PostPermissionsPage {
+  display: flex;
+}
+
+.PostPermissions {
+  height: 100%;
+  position: relative;
+  top: 100px;
+
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.PostPermissions h5 {
+  padding: 30px;
+}
+
+.singlePost {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 28vw;
+}
+
+.singlePost .profileOnPost {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.singlePost .userDetail {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.singlePost .userDetail p {
+  margin: 0;
+}
+
+.singlePost .Post {
+  display: flex;
+  flex-direction: column;
+}
+
+.singlePost .Post img {
+  width: 25vw;
+  height: auto;
+}
+
+.singlePost .Post p {
+  margin: 0;
+}
+
+.setPermission {
+  display: flex;
+}
+
+.setPermission .acceptPermission {
+  display: flex;
+  position: relative;
+  width: 50%;
+  transition: 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+  top: 5px;
+}
+
+.setPermission .acceptPermission:hover {
+  background-color: #b6b6b6;
+}
+
+.setPermission .acceptPermission p {
+  margin-top: 10px;
+}
+
+.setPermission .acceptPermission img {
+  padding: 10px;
+  width: 50px;
+}
+
+.declinePermission {
+  display: flex;
+  position: relative;
+  width: 50%;
+  transition: 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+  top: 5px;
+}
+
+.setPermission .declinePermission:hover {
+  background-color: #b6b6b6;
+}
+
+.setPermission .declinePermission p {
+  margin-top: 10px;
+}
+
+.setPermission .declinePermission img {
+  padding: 10px;
+  width: 50px;
+}
+
+.Articledisplay {
+  display: flex;
+  flex-direction: column;
+}
+
+.Heading {
+  display: flex;
+  justify-content: center;
+}
+
+.Articledisplay .Heading h5 {
+  font-size: 1.3em;
+  padding: 0px;
+}
+
+.Articlecontent p {
+  font-size: 1.2em;
+}

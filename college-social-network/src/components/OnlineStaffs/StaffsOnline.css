@@ -1,0 +1,26 @@
+.Staffs li {
+  display: flex;
+
+  align-items: center;
+
+  list-style: none;
+  padding: 8px 0px;
+  font-size: 1.2em;
+  font-weight: normal;
+  transition: 0.5s;
+}
+
+.Staffs li:hover {
+  background-color: rgba(128, 128, 128, 0.504);
+  border-radius: 5px;
+}
+
+li .userName p {
+  margin: 0px;
+}
+
+li,
+ul {
+  padding: 0;
+  margin: 0;
+}

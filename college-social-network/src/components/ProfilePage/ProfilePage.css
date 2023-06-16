@@ -1,0 +1,102 @@
+.profile-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profileContainer {
+  position: absolute;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  top: 100px;
+  background: #ffffff;
+  width: 35vw;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+
+.profile-page .profile .Profile-pic {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px;
+  align-items: center;
+}
+
+.profile-page .profile .Profile-pic .profile-image {
+  width: 130px;
+  height: auto;
+  position: relative;
+  clip-path: circle();
+  opacity: 1;
+}
+
+.profile-page .profile .Profile-pic i {
+  content: "\f093";
+  font-size: 70px;
+  position: absolute;
+
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+
+  transition: 0.5s ease;
+  background-color: #00000093;
+}
+
+.profile-page .profile .Profile-pic i:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#profilePic-input {
+  display: none;
+}
+
+.studentDetails {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.studentDetails p {
+  margin: 5px 0px;
+  font-size: 17px;
+}
+
+.studentDetails .followers {
+  display: flex;
+  gap: 10px;
+}
+
+.studentDetails > .followers > p {
+  margin: 0px;
+  cursor: pointer;
+}
+
+.studentDetails .editBtn {
+  background-color: #811eff;
+  color: white;
+  font-size: 17px;
+  padding: 3px 5px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.userPost {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 102px;
+  align-items: center;
+}

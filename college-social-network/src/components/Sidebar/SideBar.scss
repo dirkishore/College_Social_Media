@@ -1,0 +1,79 @@
+@use '../../App.scss' as m;
+
+.side-navbar {
+  width: fit-content;
+  height: fit-content;
+  left: 13px;
+  top: 100px;
+  display: flex;
+
+  position: fixed;
+
+  z-index: 1;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 20px;
+  transition: ease 0.5s;
+  @include m.mobile{
+    width: 20vw;
+  }
+}
+
+/* .side-navbar:hover {
+  width: 18vw;
+  transition: ease 0.5s;
+} */
+
+/* .side-navbar.side-menu a.active {
+  width: 18vw;
+  transition: ease 0.5s;
+} */
+
+.side-navbar .side-menu {
+  list-style: none;
+  width: 220px;
+  display: block;
+  padding: 20px 0px;
+  margin: 0px 5px;
+}
+
+.side-navbar .side-menu li .fi {
+  font-size: 18px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.side-navbar .side-menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.side-navbar .side-menu a li span {
+  position: relative;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.side-navbar .side-menu a li {
+  padding: 5px 15px;
+  width: 100%;
+  transition: 0.5s;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.side-navbar .side-menu li:hover {
+  background-color: #811eff;
+  border-radius: 8px;
+}
+
+.side-navbar .side-menu li:hover span {
+  color: white;
+}
+
+.side-navbar .side-menu li:hover .fi {
+  color: white;
+}

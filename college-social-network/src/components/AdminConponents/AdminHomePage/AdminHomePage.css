@@ -1,0 +1,147 @@
+.header {
+  width: 99%;
+  height: 80px;
+  background: #811eff;
+  /* box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.25); */
+  border-radius: 0px 0px 20px 20px;
+  margin-left: 0.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+}
+
+.sidebar {
+  position: absolute;
+  width: 17.5vw;
+  height: 40vh;
+  left: 13px;
+  top: 100px;
+  display: flex;
+  position: fixed;
+
+  z-index: 1;
+  background: #ffffff;
+  /* box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.5); */
+  border-radius: 20px;
+}
+
+.sidebar .menu {
+  padding: 20px 8px;
+  display: block;
+  list-style: none;
+}
+
+.menu li {
+  padding: 5px 8px;
+  margin: 5px 0px;
+  width: 16.5vw;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.menu li a {
+  color: black;
+  width: 100%;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.menu li:hover {
+  background-color: #8f3dfa;
+  border-radius: 10px;
+}
+
+.menu li:hover a {
+  color: white;
+}
+
+.registerStudent {
+  display: flex;
+  position: relative;
+  top: 100px;
+  align-items: center;
+  flex-direction: column;
+  /* width: fit-content; */
+  /* gap: 30px; */
+}
+
+.inner-box {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 50px 20px;
+  width: 25%;
+  border-radius: 20px;
+}
+
+.registerStudent .inputBox {
+  position: relative;
+  width: 290px;
+}
+
+.registerStudent input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #811eff;
+  background: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+}
+
+.registerStudent span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #811eff;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: #ffffff;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.7em;
+  padding: 0 10px;
+  background: #811eff;
+  border-radius: 2px;
+  letter-spacing: 0.2em;
+}
+
+.inputBox select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #811eff;
+  background: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+}
+
+.inputBox select:valid ~ span,
+.inputBox select:focus ~ span {
+  color: #ffffff;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.7em;
+  padding: 0 10px;
+  background: #811eff;
+  border-radius: 2px;
+  letter-spacing: 0.2em;
+}
+
+.inputBox label {
+  color: #ffffff;
+  transform: translateX(10px) translateY(10px);
+  font-size: 0.7em;
+  padding: 0 10px;
+  background: #811eff;
+  border-radius: 2px;
+  letter-spacing: 0.2em;
+}

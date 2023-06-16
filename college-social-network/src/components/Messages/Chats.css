@@ -1,0 +1,204 @@
+.chats-list {
+  position: fixed;
+  top: 350px;
+  width: 18vw;
+  height: 340px;
+  left: 13px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  overflow-y: hidden;
+}
+
+.previousChats {
+  height: 345px;
+  overflow-y: auto;
+}
+
+.chatBox {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 560px;
+  height: 600px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.friend {
+  position: relative;
+  cursor: pointer;
+  padding: 10px 3px;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.friend .profilePic .OnlineBadge {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 0px;
+  right: 5px;
+  border-radius: 50%;
+  background-color: limegreen;
+}
+
+.friend .profilePic {
+  position: relative;
+}
+
+.friend .profilePic img {
+  width: 45px;
+  height: 45px;
+  clip-path: circle();
+  margin-right: 8px;
+}
+
+.friend p {
+  margin: 0px;
+  font-size: 18px;
+}
+
+.friend:hover {
+  background-color: rgb(212, 212, 212);
+}
+
+.chatBox {
+  padding: 18px;
+}
+
+.chatBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chatBoxTop {
+  height: 460px;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+
+.chatBox .UserDetails {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.UserDetails img {
+  width: 52px;
+  height: 52px;
+  clip-path: circle();
+  margin-right: 8px;
+}
+
+.UserDetails p {
+  margin: 0px;
+}
+
+.Message {
+  display: flex;
+  flex-direction: column;
+}
+
+.MessageTop {
+  display: flex;
+  align-items: center;
+}
+
+.MessageTop img {
+  width: 42px;
+  height: 42px;
+  clip-path: circle();
+  margin-right: 8px;
+}
+
+.MessageTop p {
+  margin: 0px;
+}
+
+.Message .messageText {
+  width: fit-content;
+}
+
+.messageText {
+  margin: 0px;
+  width: fit-content;
+  margin-top: 10px;
+  background: #811eff;
+  padding: 5px 8px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.MessageButtom {
+  font-size: 13px;
+}
+.MessageButtom p {
+  margin-bottom: 5px;
+}
+
+.MessageInner {
+  display: flex;
+  align-items: center;
+}
+
+.Message.own {
+  display: flex;
+  align-items: flex-end;
+}
+
+.MessageInner.own {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.MessageInner.own img {
+  margin: 0px;
+  display: none;
+}
+
+.MessageInner.own p {
+  margin-right: 8px;
+}
+
+.Message.own .messageText {
+  background-color: rgb(205, 205, 205);
+  color: black;
+}
+
+.chatBox .ChatBoxInput form {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 95%;
+  bottom: 18px;
+  justify-content: space-between;
+}
+
+.chatBox .chatMessageInput {
+  height: 35px;
+  width: 90%;
+  resize: none;
+  outline: none;
+  border-radius: 20px;
+  padding-left: 15px;
+  border: 1px solid black;
+}
+
+.chatBox .ChatBoxInput img {
+  width: auto;
+  height: 30px;
+  cursor: pointer;
+}
+
+.noConversatiion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}

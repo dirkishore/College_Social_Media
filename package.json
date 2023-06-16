@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@mui/icons-material": "^5.11.11",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "mongodb": "^5.0.1",
+    "sass": "^1.60.0"
+  }
+}

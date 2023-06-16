@@ -1,0 +1,62 @@
+.AddFacultyContainer {
+  width: fit-content;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 50px 50px;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 20px;
+}
+
+.AddFacultyContainer form {
+  display: grid;
+  gap: 20px;
+}
+
+.AddFacultyContainer .inputBox {
+  position: relative;
+  width: 290px;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #811eff;
+  background: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #811eff;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: #ffffff;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.7em;
+  padding: 0 10px;
+  background: #811eff;
+  border-radius: 2px;
+  letter-spacing: 0.2em;
+}
+
+.inputBox label {
+  color: #ffffff;
+  transform: translateX(10px) translateY(10px);
+  font-size: 0.7em;
+  padding: 0 10px;
+  background: #811eff;
+  border-radius: 2px;
+  letter-spacing: 0.2em;
+}
